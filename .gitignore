@@ -1,0 +1,4 @@
+vendor
+export.json
+composer.lock
+config.php
