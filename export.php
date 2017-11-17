@@ -24,7 +24,7 @@ try {
     $ig->login();
 } catch (\Exception $e) {
     echo 'Something went wrong: '.$e->text."\n";
-    exit(0);
+    exit(1);
 }
 
 $file = fopen('export.json', 'w');
@@ -55,8 +55,10 @@ try {
     fwrite($file, "}" . "\n");
 } catch (\Exception $e) {
     echo 'Something went wrong: '.$e->getMessage()."\n";
+    exit(1);
 }
 
 fclose($file);
 
 echo "done :)" ."\n";
+exit(0);
