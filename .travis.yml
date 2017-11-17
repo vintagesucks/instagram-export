@@ -15,7 +15,7 @@ script:
   - php -l export.php
   - php phpcs.phar export.php
   - php export.php
-  - jsonlint export.json
+  - jsonlint export.json -q
 
 cache:
   directories:
