@@ -1,9 +1,33 @@
 <?php
+/**
+ * Instagram Export
+ *
+ * Exports all items on an Instagram profile to JSON.
+ *
+ * PHP version 5.6
+ *
+ * @category Instagram_Export
+ * @package  Instagram_Export
+ * @author   Nikolas Evers <hello@nikol.as>
+ * @license  MIT License https://git.io/vFyxs
+ * @link     https://github.com/vintagesucks/instagram-export
+ */
+
 set_time_limit(0);
 date_default_timezone_set('UTC');
 
 require __DIR__.'/vendor/autoload.php';
 require __DIR__.'/config.php';
+
+if (getenv('USERNAME')) {
+    $username = getenv('USERNAME');
+}
+if (getenv('PASSWORD')) {
+    $password = getenv('PASSWORD');
+}
+if (getenv('EXPORTEDACCOUNT')) {
+    $exportedAccount = getenv('EXPORTEDACCOUNT');
+}
 
 $debug = false;
 $truncatedDebug = false;
@@ -14,7 +38,7 @@ try {
     $ig->login();
 } catch (\Exception $e) {
     echo 'Something went wrong: '.$e->text."\n";
-    exit(0);
+    exit(1);
 }
 
 $file = fopen('export.json', 'w');
@@ -45,8 +69,10 @@ try {
     fwrite($file, "}" . "\n");
 } catch (\Exception $e) {
     echo 'Something went wrong: '.$e->getMessage()."\n";
+    exit(1);
 }
 
 fclose($file);
 
 echo "done :)" ."\n";
+exit(0);
