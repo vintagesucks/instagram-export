@@ -8,12 +8,11 @@ php:
 before_script:
   - composer install --no-interaction
   - cp config.sample.php config.php
-  - curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
   - npm install jsonlint -g
 
 script:
   - php -l export.php
-  - php phpcs.phar export.php
+  - vendor/bin/phpcs export.php
   - php export.php
   - jsonlint export.json -q
 

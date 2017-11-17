@@ -7,7 +7,7 @@ Exports all items on an Instagram profile to JSON using [Instagram-API](https://
 Copy `config.sample.php` to `config.php`, fill out your details and run:
 
 ```
-composer install
+composer install --no-dev
 ```
 
 ```
