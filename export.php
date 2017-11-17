@@ -1,4 +1,18 @@
 <?php
+/**
+ * Instagram Export
+ *
+ * Exports all items on an Instagram profile to JSON.
+ *
+ * PHP version 5.6
+ *
+ * @category Instagram_Export
+ * @package  Instagram_Export
+ * @author   Nikolas Evers <hello@nikol.as>
+ * @license  MIT License https://git.io/vFyxs
+ * @link     https://github.com/vintagesucks/instagram-export
+ */
+
 set_time_limit(0);
 date_default_timezone_set('UTC');
 
