@@ -13,3 +13,5 @@ composer install --no-dev
 ```
 php export.php
 ```
+
+[![Screenshot](https://raw.githubusercontent.com/vintagesucks/instagram-export/master/screenshot.png)]
