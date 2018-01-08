@@ -34,8 +34,7 @@ $truncatedDebug = false;
 
 $ig = new \InstagramAPI\Instagram($debug, $truncatedDebug);
 try {
-    $ig->setUser($username, $password);
-    $ig->login();
+    $ig->login($username, $password);
 } catch (\Exception $e) {
     echo 'Something went wrong: '.$e->text."\n";
     exit(1);
@@ -43,7 +42,7 @@ try {
 
 $file = fopen('export.json', 'w');
 
-$user = $ig->getUserInfoByName($exportedAccount)->user;
+$user = $ig->people->getInfoByName($exportedAccount)->user;
 $mediaCount = $user->media_count;
 
 try {
@@ -52,7 +51,7 @@ try {
     echo "Exporting items for user: $exportedAccount \n";
     fwrite($file, "{" . "\n");
     do {
-        $response = $ig->getUserFeed($user->pk, $maxId);
+        $response = $ig->timeline->getUserFeed($user->pk, $maxId);
         foreach ($response->getItems() as $item) {
             if ($i > 0) {
                 fwrite($file, ", " . "\n");
