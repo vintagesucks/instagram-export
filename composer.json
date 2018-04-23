@@ -1,6 +1,6 @@
 {
     "require": {
-        "mgp25/instagram-php": "^3.0"
+        "mgp25/instagram-php": "^4.1"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "3.*"
