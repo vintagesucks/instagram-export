@@ -4,7 +4,7 @@
  *
  * Exports all items on an Instagram profile to JSON.
  *
- * PHP version 7.0
+ * PHP version 7.1.3
  *
  * @category Instagram_Export
  * @package  Instagram_Export
@@ -36,14 +36,14 @@ $ig = new \InstagramAPI\Instagram($debug, $truncatedDebug);
 try {
     $ig->login($username, $password);
 } catch (\Exception $e) {
-    echo 'Something went wrong: '.$e->text."\n";
+    echo 'Something went wrong: '.$e->getMessage()."\n";
     exit(1);
 }
 
 $file = fopen('export.json', 'w');
 
-$user = $ig->people->getInfoByName($exportedAccount)->user;
-$mediaCount = $user->media_count;
+$user = $ig->people->getInfoByName($exportedAccount)->getUser();
+$mediaCount = $user->getMediaCount();
 
 try {
     $i = 0;
@@ -51,7 +51,7 @@ try {
     echo "Exporting items for user: $exportedAccount \n";
     fwrite($file, "{" . "\n");
     do {
-        $response = $ig->timeline->getUserFeed($user->pk, $maxId);
+        $response = $ig->timeline->getUserFeed($user->getPk(), $maxId);
         foreach ($response->getItems() as $item) {
             if ($i > 0) {
                 fwrite($file, ", " . "\n");
