@@ -4,7 +4,7 @@
  *
  * Exports all items on an Instagram profile to JSON.
  *
- * PHP version 7.0
+ * PHP version 7.1.3
  *
  * @category Instagram_Export
  * @package  Instagram_Export
