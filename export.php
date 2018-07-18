@@ -19,14 +19,14 @@ date_default_timezone_set('UTC');
 require __DIR__.'/vendor/autoload.php';
 require __DIR__.'/config.php';
 
-if (getenv('USERNAME')) {
-    $username = getenv('USERNAME');
+if (getenv('INSTAGRAM_USERNAME')) {
+    $username = getenv('INSTAGRAM_USERNAME');
 }
-if (getenv('PASSWORD')) {
-    $password = getenv('PASSWORD');
+if (getenv('INSTAGRAM_PASSWORD')) {
+    $password = getenv('INSTAGRAM_PASSWORD');
 }
-if (getenv('EXPORTEDACCOUNT')) {
-    $exportedAccount = getenv('EXPORTEDACCOUNT');
+if (getenv('INSTAGRAM_EXPORTEDACCOUNT')) {
+    $exportedAccount = getenv('INSTAGRAM_EXPORTEDACCOUNT');
 }
 
 $debug = false;
