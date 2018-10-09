@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "33460a771f10e2927b6c16d7540836f5",
+    "content-hash": "68303f9f8ceebc21a74f4c1d84329f1f",
     "packages": [
         {
             "name": "binsoul/net-mqtt",
@@ -539,22 +539,23 @@
         },
         {
             "name": "mgp25/instagram-php",
-            "version": "v4.1.0",
+            "version": "v5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mgp25/Instagram-API.git",
-                "reference": "5fbb2ae7504d96a55c94819656e1ff6d4e984fb9"
+                "reference": "e3e07ec11ef5883ad6c0247c307ada317edb262f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mgp25/Instagram-API/zipball/5fbb2ae7504d96a55c94819656e1ff6d4e984fb9",
-                "reference": "5fbb2ae7504d96a55c94819656e1ff6d4e984fb9",
+                "url": "https://api.github.com/repos/mgp25/Instagram-API/zipball/e3e07ec11ef5883ad6c0247c307ada317edb262f",
+                "reference": "e3e07ec11ef5883ad6c0247c307ada317edb262f",
                 "shasum": ""
             },
             "require": {
                 "binsoul/net-mqtt-client-react": "^0.3.2",
                 "clue/http-proxy-react": "^1.1.0",
                 "clue/socks-react": "^0.8.2",
+                "ext-bcmath": "*",
                 "ext-curl": "*",
                 "ext-exif": "*",
                 "ext-gd": "*",
@@ -610,7 +611,7 @@
                 "php",
                 "private"
             ],
-            "time": "2018-04-20T11:59:43+00:00"
+            "time": "2018-10-08T22:42:29+00:00"
         },
         {
             "name": "psr/http-message",
@@ -1088,16 +1089,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.1.1",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "1d1677391ecf00d1c5b9482d6050c0c27aa3ac3a"
+                "reference": "ee33c0322a8fee0855afcc11fff81e6b1011b529"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/1d1677391ecf00d1c5b9482d6050c0c27aa3ac3a",
-                "reference": "1d1677391ecf00d1c5b9482d6050c0c27aa3ac3a",
+                "url": "https://api.github.com/repos/symfony/process/zipball/ee33c0322a8fee0855afcc11fff81e6b1011b529",
+                "reference": "ee33c0322a8fee0855afcc11fff81e6b1011b529",
                 "shasum": ""
             },
             "require": {
@@ -1133,7 +1134,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-31T10:17:53+00:00"
+            "time": "2018-10-02T12:40:59+00:00"
         },
         {
             "name": "valga/fbns-react",
