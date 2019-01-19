@@ -17,7 +17,6 @@ set_time_limit(0);
 date_default_timezone_set('UTC');
 
 require __DIR__.'/vendor/autoload.php';
-require __DIR__.'/config.php';
 
 if (getenv('USERNAME')) {
     $username = getenv('USERNAME');
@@ -31,7 +30,7 @@ if (getenv('EXPORTEDACCOUNT')) {
 
 $debug = false;
 $truncatedDebug = false;
-
+require __DIR__.'/config.php';
 $ig = new \InstagramAPI\Instagram($debug, $truncatedDebug);
 try {
     $ig->login($username, $password);
