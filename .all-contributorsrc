@@ -17,6 +17,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "LeaVerou",
+      "name": "Lea Verou",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/175836?v=4",
+      "profile": "http://lea.verou.me",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7
