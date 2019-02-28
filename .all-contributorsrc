@@ -1,0 +1,23 @@
+{
+  "projectName": "instagram-export",
+  "projectOwner": "vintagesucks",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "vintagesucks",
+      "name": "Nikolas Evers",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/13335308?v=4",
+      "profile": "https://nikol.as",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
