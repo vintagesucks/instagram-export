@@ -4,17 +4,15 @@ Exports all items on an Instagram profile to JSON using [Instagram-API](https://
 
 ## Usage
 
-Copy `config.sample.php` to `config.php`, fill out your details and run:
+Fill out your account details in `.env` and run:
 
 ```
 composer install --no-dev
 ```
 
 ```
-php export.php
+php instagram export:json <username>
 ```
-
----
 
 ![Screenshot](https://raw.githubusercontent.com/vintagesucks/instagram-export/master/screenshot.png)
 

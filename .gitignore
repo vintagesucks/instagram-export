@@ -1,3 +1,2 @@
-vendor
-export.json
-config.php
+/vendor
+.env
