@@ -1,4 +1,4 @@
-# Instagram Export [![Build Status](https://travis-ci.org/vintagesucks/instagram-export.svg?branch=master)](https://travis-ci.org/vintagesucks/instagram-export) ![PHP](https://img.shields.io/badge/PHP-%5E7.1.3-blue.svg) [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-round)](#contributors)
+# Instagram Export [![Build Status](https://travis-ci.org/vintagesucks/instagram-export.svg?branch=master)](https://travis-ci.org/vintagesucks/instagram-export) ![PHP](https://img.shields.io/badge/PHP-%5E7.3.0-blue.svg) [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-round)](#contributors)
 
 Exports all items on an Instagram profile to JSON using [Instagram-API](https://github.com/mgp25/Instagram-API). Motivated by [this tweet](https://twitter.com/LeaVerou/status/929542539425677312) by Lea Verou.
 
