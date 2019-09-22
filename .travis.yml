@@ -12,7 +12,6 @@ matrix:
 
 before_script:
   - composer install --no-interaction
-  - cp config.sample.php config.php
   - npm install jsonlint -g
 
 script:
