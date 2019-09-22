@@ -14,8 +14,6 @@ composer install --no-dev
 php instagram export:json <username>
 ```
 
-![Screenshot](https://raw.githubusercontent.com/vintagesucks/instagram-export/master/screenshot.png)
-
 ## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://github.com/all-contributors/all-contributors#emoji-key)):
