@@ -173,11 +173,11 @@ class Json extends Command
                 }
                 $loggedIn = true;
             } catch (\InstagramAPI\Exception\IncorrectPasswordException $e) {
-                $this->error('The password you entered is incorrect. Please try again.');
+                $this->error('The password you provided is incorrect. Please try again.');
                 exit(1);
             } catch (\InstagramAPI\Exception\ThrottledException $e) {
-                $this->error('Throttled by Instagram because of too many API requests.');
-                exit(1);
+                $this->comment('Throttled by Instagram because of too many API requests.');
+                sleep(5);
             } catch (\Exception $e) {
                 throw $e;
             }
