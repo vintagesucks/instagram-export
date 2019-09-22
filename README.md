@@ -5,7 +5,7 @@ Exports all items on an Instagram profile to JSON using [Instagram-API](https://
 
 ## Usage
 
-Fill out your account details in `.env` and run:
+Copy `.env.example` to `.env`, fill out your account details and run:
 
 ```
 composer install --no-dev
