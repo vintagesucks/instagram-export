@@ -1,31 +1,22 @@
 language: php
 
 php:
-  - '7.1'
-  - '7.2'
+  - '7.3'
+  - '7.4snapshot'
   - nightly
 
 matrix:
   allow_failures:
+    - php: '7.4snapshot'
     - php: nightly
 
 before_script:
   - composer install --no-interaction
-  - cp config.sample.php config.php
   - npm install jsonlint -g
 
 script:
-  - php -l export.php
-  - vendor/bin/phpcs export.php
-  - php export.php
-  - jsonlint export.json -q
+  - find app -name "*.php" | xargs -n 1 php -l
 
 cache:
   directories:
   - "$HOME/.composer/cache"
-
-env:
-  global:
-    - secure: WvHt3LP8Bqf+GONYWCXvFMYStpGFjmJJPInJawKPgzGsonK00CbKnyGD1M1U4HYLJHPL2z/IdaILdWCrd+D2EZ2LWt9jLmkhEAT3dG7PtJLlkrDQdLj6Gckk5gYViB5EpZpT32RHtSOLm/6np8ZQ9wopbalG4eg0TAyn4+ETAA7EPs3FzE/ZBgG0YomVGpYPIUq741REHNs0sa68F64CrZUFHC/U8jRJdavye29YDyULBXKgaloLXQ57C+UgA30zodfsmQuI7UxaXv2k+tKwEwHad6yxgV5a0Gb1aH4utVscpC9Xw0DnAeCDhrkZThj9qa2gIPBuKvg5S6lXkmfQxjsYCe0ClKn3WkLOpK/3+cIFcfBnYOXcpsxDcQDZiW/ugNCARxUUBvT1e7ekJxIWQ1JCxQs98V4a6Z4f1iYABcgfHCuLwLeFr+gY6FR+5nOHVRs6/RHhpKSFjpHy/R0EiCSUc4lIRpreDAQIn0IwJlPRdHyNh0xN4RWcK7mZPjmP18nk8xh1vJPI7hjDPBtJS81Dqyaiw4ckoHErT4hUNnqu5c8GHgxjWFoLaXj0g+DOdyX2uItkBVzM5ppP0dBjqambkSIrAN2PTrXEmhYMztNDCWLk7fY9ngZ5TZr/kOk+6y+Uh621YvLZcBZVGXa48wVNlpLK/bL2Nr9nvlAgraQ=
-    - secure: knpjamETpbeqSTsqPJs/Q4oQgd3Dai1ERR5C1U8oltyS1fGlrXSU7UruqShT2CnURNeLWT80tSWN7j4seJyx3AQ9FLObiNdLjc9A8npI75HSoHQfyThiv8oBN4ftB+Ez47tkMd7MW0+5Q4ppyHEQkY8HHx0TQM+fSqj56Y5FOAyiHuHFYhbyThuDxqEBPowQz8cgnQBhZ0Y3mxfybJdESV9ihJgGTX/mQFxvZxRzvW3/Jxv+sZN74XJQw0MxpHlDow30sWB57DFoz0GNeUeSz48uEIBRbw8WmHx6wGeHilrgt7ohQZ/1459O41/mWdYmMH3J/nsXWy933dOCN8bcmC023BpFf6eGwSNlD6DREvhFQIsGer3ihulMNq3bK7ysrhbR+/+0pvL//G4fYRExz8gyNMEDr/P5GJ/IJyIvv/POJB3pswAf/pNvJvPZgofG7tintA4daOk0pt1+tmStGP+rxOhsdE8URdCtNwK4uH7DXjDDldyikG2pGcUeM18C7YIbw4NsBdttihVWMHJAqFOUWV1GBjW+kqQE+aq+DFqcarnkzSqSu85MyG7F4j8lwnOx6FOwHY7U2V9k3Q1AWdTOcxd5+Rn1kc8GVmU+7esSPHhQlM9lCLkmnoOZuU9UgHpo6kEr9VwB0PQ5Wo1iCqrchwCnMKkPmRk+qmPuSXM=
-    - secure: eacpAFvNB+37T4J1Fyd6sFfJyfvgoGozG2sjjOLBnQGDp3cdenU6XHhuBOynHzgP2LgNB28h4TS1cwdJ4dV/Ms/9Y9eU8gc75gaUrabXy0z2cy5cYtjHOWQPu6AhixVH5q5RexmD3nMWSH+tXQe7QP2YGdDZAmOl+aIB3c0gXVB+d78bm0IXMni+YwLqEX5o1/4XqwbJJEyq1qkm4KFu0oCjWWRWTrhoDNrOgY36SIyam8fJufDAQCEILYAl9RycGAuJHSRIjteG2VKtaqM02rPzLFodYlomBRum6ghkRQj/7qV7vXVyOdWuFDTdT2g57hhOPK5inVviXko2ClTWG+QRT6r7COZVst4WccLY1pdlGHCl8zmOIUUTJenipdtewAHoaT3D3IJYVeRKAFTfD8f3B11ToI3Zr9q/COWpRERU7czbGUDQ/JBl1XKstSLiHUmiq4QP0/k0v0rESm9YZLcRZi5EJwYV1mF6FzlBLDNvQqicPbP/arFXDG9fWF36UfaFydaTIm9jSk7fgYBbJT/SD1rbrQPNwZYz4y3xrbgLPeDfgkDJoHXFwWyxr5uncwHiL7YCPnEmNMvMAf2CH7sQKpUAs8O0AjyFETQh+viw+IR1q6C4+85xHpZpnZOJnUY1KHFjTgNJmDBIERtV8gw1nQ8+rKcu+zcDnxHnNyI=
