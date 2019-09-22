@@ -1,8 +1,50 @@
 {
+    "name": "vintagesucks/instagram-export",
+    "description": "Exports all items on an Instagram profile to JSON.",
+    "keywords": ["instagram", "api", "export", "json", "console", "cli"],
+    "homepage": "https://github.com/vintagesucks/instagram-export",
+    "type": "project",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/vintagesucks/instagram-export/issues",
+        "source": "https://github.com/vintagesucks/instagram-export"
+    },
+    "authors": [
+        {
+            "name": "Nikolas Evers",
+            "email": "hello@nikol.as"
+        }
+    ],
     "require": {
-        "mgp25/instagram-php": "^4.1"
+        "php": "^7.3.0",
+        "laravel-zero/framework": "5.8.*",
+        "mgp25/instagram-php": "^7.0"
     },
     "require-dev": {
-        "squizlabs/php_codesniffer": "3.*"
-    }
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "bin": ["instagram"]
 }
