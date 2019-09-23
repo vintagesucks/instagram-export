@@ -3,13 +3,22 @@
 
 Exports all items on an Instagram profile to JSON using [Instagram-API](https://github.com/mgp25/Instagram-API). Motivated by [this tweet](https://twitter.com/LeaVerou/status/929542539425677312) by Lea Verou.
 
-## Usage
+## Prerequisites
+
+* [PHP 7.3](https://www.php.net/)
+* [Composer](https://getcomposer.org/)
+
+## Setup
+
+Clone or download this repository to get started.
 
 Copy `.env.example` to `.env`, fill out your account details and run:
 
 ```
 composer install --no-dev
 ```
+
+## Usage
 
 ```
 php instagram export:json <username>
