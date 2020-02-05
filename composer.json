@@ -15,10 +15,17 @@
             "email": "hello@nikol.as"
         }
     ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/mgp25/instagram-php",
+            "packagist.org": false
+        }
+    ],
     "require": {
         "php": "^7.3.0",
         "laravel-zero/framework": "6.0.*",
-        "mgp25/instagram-php": "^7.0"
+        "mgp25/instagram-api": "@dev"
     },
     "require-dev": {
         "mockery/mockery": "^1.0",
