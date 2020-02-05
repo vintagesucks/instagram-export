@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e9981f25f1e2bf32784f03d1f4633d6d",
+    "content-hash": "a8b4f0b16dbdc3b5f4e7ff2fd2b3eb59",
     "packages": [
         {
             "name": "binsoul/net-mqtt",
@@ -1259,16 +1259,16 @@
         },
         {
             "name": "laravel-zero/framework",
-            "version": "v6.0.0",
+            "version": "v6.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-zero/framework.git",
-                "reference": "6e713cee05fc6bb88941656423e7762a73bdd838"
+                "reference": "e17fc422438226255a54bbcb944b2975b50089a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel-zero/framework/zipball/6e713cee05fc6bb88941656423e7762a73bdd838",
-                "reference": "6e713cee05fc6bb88941656423e7762a73bdd838",
+                "url": "https://api.github.com/repos/laravel-zero/framework/zipball/e17fc422438226255a54bbcb944b2975b50089a7",
+                "reference": "e17fc422438226255a54bbcb944b2975b50089a7",
                 "shasum": ""
             },
             "require": {
@@ -1285,9 +1285,9 @@
                 "laravel-zero/foundation": "^6.0",
                 "league/flysystem": "^1.0.8",
                 "nunomaduro/collision": "^3.0",
-                "nunomaduro/laravel-console-summary": "^1.2",
-                "nunomaduro/laravel-console-task": "^1.3",
-                "nunomaduro/laravel-desktop-notifier": "^2.2",
+                "nunomaduro/laravel-console-summary": "^1.3",
+                "nunomaduro/laravel-console-task": "^1.4",
+                "nunomaduro/laravel-desktop-notifier": "^2.3",
                 "php": "^7.2",
                 "psr/log": "^1.1",
                 "symfony/console": "^4.3",
@@ -1297,17 +1297,21 @@
                 "vlucas/phpdotenv": "^3.0"
             },
             "require-dev": {
+                "hmazter/laravel-schedule-list": "^2.1",
                 "illuminate/bus": "^6.0",
                 "illuminate/database": "^6.0",
                 "illuminate/log": "^6.0",
                 "illuminate/queue": "^6.0",
-                "nunomaduro/laravel-console-dusk": "^1.4",
-                "nunomaduro/laravel-console-menu": "^2.2",
+                "nunomaduro/laravel-console-dusk": "^1.6",
+                "nunomaduro/laravel-console-menu": "^2.3",
                 "padraic/phar-updater": "^1.0.6",
                 "phpstan/phpstan": "^0.11",
                 "phpunit/phpunit": "^8.0",
                 "vlucas/phpdotenv": "^3.0",
                 "zendframework/zend-text": "^2.7"
+            },
+            "suggest": {
+                "ext-pcntl": "Required to ensure that data is cleared when cancelling the build process."
             },
             "type": "library",
             "autoload": {
@@ -1334,7 +1338,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2019-10-05T08:29:20+00:00"
+            "time": "2020-01-31T20:53:49+00:00"
         },
         {
             "name": "lazyjsonmapper/lazyjsonmapper",
