@@ -1,3 +1,4 @@
 /vendor
 .env
 *_*_*_*_*.json
+.DS_Store
