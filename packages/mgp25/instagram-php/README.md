@@ -2,8 +2,6 @@
 
 This is a PHP library which emulates Instagram's Private API. This library is packed full with almost all the features from the Instagram Android App. This includes media uploads, direct messaging, stories and more.
 
-https://raw.githubusercontent.com/vintagesucks/instagram-export/master/packages/mgp25/instagram-php/examples/assets/instagram.png
-
 **Read the [wiki](https://github.com/mgp25/Instagram-API/wiki)** and previous issues before opening a new one! Maybe your issue has already been answered.
 
 **Frequently Asked Questions:** [F.A.Q.](https://github.com/mgp25/Instagram-API/wiki/FAQ)
