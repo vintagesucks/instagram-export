@@ -15,7 +15,7 @@ Clone or download this repository to get started.
 Copy `.env.example` to `.env`, fill out your account details and run:
 
 ```
-composer install --no-dev
+composer install
 ```
 
 ## Usage
