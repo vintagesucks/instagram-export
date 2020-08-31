@@ -1,0 +1,22 @@
+{
+    "name": "PHP",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "VARIANT": "7.3",
+        }
+    },
+
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "workbench.colorTheme": "Night Owl",
+        "php.suggest.basic": false,
+        "editor.minimap.enabled": false
+    },
+
+    "extensions": [
+        "EditorConfig.EditorConfig",
+        "bmewburn.vscode-intelephense-client",
+        "sdras.night-owl"
+    ]
+}
