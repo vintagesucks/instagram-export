@@ -33,7 +33,7 @@ jobs:
           restore-keys: ${{ runner.os }}-composer-
 
       - name: Install dependencies
-        run: composer install --prefer-dist --no-interaction
+        run: composer install --prefer-dist
 
       - name: Check Syntax
         run: find app -name "*.php" | xargs -n 1 php -l
