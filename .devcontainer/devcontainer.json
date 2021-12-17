@@ -1,9 +1,0 @@
-{
-    "name": "PHP",
-    "build": {
-        "dockerfile": "Dockerfile",
-        "args": {
-            "VARIANT": "7.3",
-        }
-    }
-}
