@@ -2,8 +2,6 @@
 
 namespace InstagramAPI\Settings;
 
-use Fbns\Client\Auth\DeviceAuth;
-use Fbns\Client\AuthInterface;
 use InstagramAPI\Exception\SettingsException;
 use InstagramAPI\Utils;
 
@@ -695,37 +693,6 @@ class StorageHandler
     public function getRewriteRules()
     {
         return $this->_unpackJson((string) $this->get('zr_rules'), true);
-    }
-
-    /**
-     * Save FBNS authorization.
-     *
-     * @param AuthInterface $auth
-     */
-    public function setFbnsAuth(
-        AuthInterface $auth)
-    {
-        $this->set('fbns_auth', $auth);
-    }
-
-    /**
-     * Get FBNS authorization.
-     *
-     * Will restore previously saved auth details if they exist. Otherwise it
-     * creates random new authorization details.
-     *
-     * @return AuthInterface
-     */
-    public function getFbnsAuth()
-    {
-        $result = new DeviceAuth();
-
-        try {
-            $result->read($this->get('fbns_auth'));
-        } catch (\Exception $e) {
-        }
-
-        return $result;
     }
 
     /**
