@@ -2,3 +2,4 @@
 .env
 *_*_*_*_*.json
 .DS_Store
+composer.lock
