@@ -1,11 +1,11 @@
 # Instagram Export
-[![Build Status](https://github.com/vintagesucks/instagram-export/workflows/Build/badge.svg)](https://github.com/vintagesucks/instagram-export/actions) [![Dependabot](https://badgen.net/badge/Dependabot/enabled/green?icon=dependabot)](https://dependabot.com/) ![PHP](https://img.shields.io/badge/PHP-%5E7.3.0-blue.svg) [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-round)](#contributors)
+[![Build Status](https://github.com/vintagesucks/instagram-export/workflows/Build/badge.svg)](https://github.com/vintagesucks/instagram-export/actions) [![Dependabot](https://badgen.net/badge/Dependabot/enabled/green?icon=dependabot)](https://dependabot.com/) ![PHP](https://img.shields.io/badge/PHP-%5E7.3-blue.svg) [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-round)](#contributors)
 
 Exports all items on an Instagram profile to JSON using [Instagram-API](https://github.com/vintagesucks/instagram-export/tree/master/packages/mgp25/instagram-php). Motivated by [this tweet](https://twitter.com/LeaVerou/status/929542539425677312) by Lea Verou.
 
 ## Prerequisites
 
-* [PHP 7.3](https://www.php.net/)
+* [PHP](https://www.php.net/) 7.3 or 7.4
 * [Composer](https://getcomposer.org/)
 
 ## Setup

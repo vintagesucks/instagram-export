@@ -23,7 +23,7 @@
         }
     ],
     "require": {
-        "php": "^7.3.0",
+        "php": "^7.3",
         "laravel-zero/framework": "^8.2.0",
         "mgp25/instagram-api": "@dev"
     },
